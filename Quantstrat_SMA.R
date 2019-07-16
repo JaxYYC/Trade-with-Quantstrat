@@ -1,4 +1,5 @@
 #################^^ Run this part once at startup unless you change assets ^^^^^^^^##############################################
+
 library(quantstrat)
 library(blotter)
 library(quantmod)
@@ -33,9 +34,7 @@ osInvestAll <- function (data, timestamp, orderqty, ordertype,
   ifelse(is.na(UnitSize1),0,UnitSize1)
 }
 
-
 osInvestAllShort <- function(...) { -osInvestAll(...)}
-
 
 #######  add or remove assets here #################################
 symbolsCTA <- c('DBC','GLD','IAU','SLV','USO')
